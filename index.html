@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="shopping,phone,tvs,computer,pc,komputer,televizor,telefon,smartphone" name="keywords">
+    <meta name="author" content="Sovet,Pavin,Nuran">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <div id="openColorDiv">
+        <div>
+            <a style="cursor: pointer;color: black !important;" onclick="showColors()"> <i
+                    class="fas fa-fill-drip"></i></a>
+        </div>
+        <div id="changeColor">
+            <div onclick="changeColor(this.id)" class="small" id="red"></div>
+            <div onclick="changeColor(this.id)" class="small" id="blue"></div>
+        </div>
+    </div>
+    <div class="container-fluid" id="navContainer">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="../index.html" id="navA">ELECTRONICS</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./html/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./html/compare.html">Compare</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./html/contactUs.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <a href="#" class="text-white" id="shopIcon"><i class="fas fa-shopping-cart"><span
+                                    class="badge badge-success" id="badgeForShopping">0</span></i></a>
+                    </div>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success my-2 my-sm-0" type="button"><i
+                                class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid mt-4 d-flex">
+        <div id="newsLeft">
+            <div class="newsDiv">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/66SGcBAs04w" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="newsDiv">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1aqI7EnfbVM" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="newsDiv">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XOlQrG0RlmI" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div id="carouselId" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./img/carousel-1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./img/carousel-4.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div id="newsRight">
+            <div class="newsDiv newsContent">
+                <img src="./img/news1Img.jpg" width="100%" height="100%" alt="">
+                <div class="contentDiv"></div>
+                <div class="contentDiv2"><a target="_blank"
+                        href="https://www.gsmarena.com/nokia_54_pops_up_on_fcc_design_partially_revealed-news-46600.php"
+                        class="text-danger">Nokia 5.4 pops up on FCC, design partially
+                        revealed</a>
+                    <p class="text-white">
+                        A full FCC listing of the Nokia 5.4 was published, revealing some details about the handset
+                        along with a rough sketch of the design. And it looks ...
+                    </p>
+                </div>
+            </div>
+            <div class="newsDiv newsContent">
+                <img src="./img/news2Img.jpg" width="100%" height="100%" alt="">
+                <div class="contentDiv">
+                </div>
+                <div class="contentDiv2"><a target="_blank"
+                        href="https://www.gsmarena.com/microsoft_announces_new_surface_laptop_go_and_updated_surface_pro_x-news-45595.php"
+                        class="text-danger">Microsoft announces new Surface Laptop Go and updated Surface Pro X</a>
+                    <p class="text-white">
+                        Microsoft is releasing two new computers today, the budget-oriented Surface Laptop Go and the
+                        second generation version of the premium Surface Pro X...
+                    </p>
+                </div>
+            </div>
+            <div class="newsDiv newsContent">
+                <img src="./img/news3Img.jpg" width="100%" height="100%" alt="">
+                <div class="contentDiv">
+                </div>
+                <div class="contentDiv2"><a target="_blank"
+                        href="https://www.gsmarena.com/honor_hunter_is_a_gaming_laptop_launching_on_september_16-news-45124.php"
+                        class="text-danger">Honor Hunter is a gaming laptop launching on September 16</a>
+                    <p class="text-white">
+                        Yesterday, Honor announced that it's holding an event on September 16 in China and the start of
+                        the show would be the gaming-centric notebook - the Honor Hunter. Two new smartwatches will join
+                        the event as well....
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4 pt-4" id="newProducts">
+
+        <div class="row mt-4 pt-4 pb-4 d-flex justify-content-center" class="titles">
+            <h3>New Products</h3>
+        </div>
+        <div class="row listNewProducts">
+            <div class="col-3 productCal">
+                <div class="product">
+                    <div class="img">
+                        <img src="./img/iphoneX.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h5 class="titleForProduct"><a target="_blank" href="./html/singlePage.html">Iphone X
+                                (Silver)</a></h5>
+                        <div style="position: absolute; bottom: 0;width:100%">
+                            <div class="priceAndBasket">
+                                <div style="width: 100%;justify-content: space-around;display: flex;">
+                                    <div>
+                                        <p class="mt-2">2599.99 ₼</p>
+                                    </div>
+                                    <div>
+                                        <button onclick="addShopping()" class="btn btn-gray">Add Basket</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 productCal" class="productCal">
+                <div class="product">
+                    <div class="img">
+                        <img src="./img/HITACHI TV-553350.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h5 class="titleForProduct"><a target="_blank" href="./html/singlePage2.html">HITACHI
+                                TV-553350</a></h5>
+                        <div style="position: absolute; bottom: 0;width:100%">
+                            <div class="priceAndBasket">
+                                <div style="width: 100%;justify-content: space-around;display: flex;">
+                                    <div>
+                                        <p class="mt-2">1699.99 ₼</p>
+                                    </div>
+                                    <div>
+                                        <button onclick="addShopping()" class="btn btn-gray">Add Basket</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 productCal" class="productCal">
+                <div class="product">
+                    <div class="img">
+                        <img src="./img/dell7567.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h5 class="titleForProduct"><a target="_blank" href="./html/singlePage3.html">DELL Inspiron 15
+                                7567</a></h5>
+                        <div style="position: absolute; bottom: 0;width:100%">
+                            <div class="priceAndBasket">
+                                <div style="width: 100%;justify-content: space-around;display: flex;">
+                                    <div>
+                                        <p class="mt-2">2400 ₼</p>
+                                    </div>
+                                    <div>
+                                        <button onclick="addShopping()" class="btn btn-gray">Add Basket</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row listNewProducts mt-4 pt-4">
+            <div class="col-3 productCal">
+                <div class="product">
+                    <div class="img">
+                        <img src="./img/SAMSUNG RU7300 Curved.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h5 class="titleForProduct"><a target="_blank" href="./html/singlePage4.html">SAMSUNG RU7300
+                                CURVED</a></h5>
+                        <div style="position: absolute; bottom: 0;width:100%">
+                            <div class="priceAndBasket">
+                                <div style="width: 100%;justify-content: space-around;display: flex;">
+                                    <div>
+                                        <p class="mt-2">3989.99 ₼</p>
+                                    </div>
+                                    <div>
+                                        <button onclick="addShopping()" class="btn btn-gray">Add Basket</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 productCal" class="productCal">
+                <div class="product">
+                    <div class="img">
+                        <img src="./img/iphoneX.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h5 class="titleForProduct"><a target="_blank" href="./html/singlePage5.html">IPHONE X 256GB
+                                WHITE</a></h5>
+                        <div style="position: absolute; bottom: 0;width:100%">
+                            <div class="priceAndBasket">
+                                <div style="width: 100%;justify-content: space-around;display: flex;">
+                                    <div>
+                                        <p class="mt-2">1789.99₼</p>
+                                    </div>
+                                    <div>
+                                        <button onclick="addShopping()" class="btn btn-gray">Add Basket</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 productCal" class="productCal">
+                <div class="product">
+                    <div class="img">
+                        <img src="./img/MacBook2017.jfif" alt="">
+                    </div>
+                    <div class="content">
+                        <h5 class="titleForProduct"><a target="_blank" href="./html/singlePage6.html">MacBook (2017)</a>
+                        </h5>
+                        <div style="position: absolute; bottom: 0;width:100%">
+                            <div class="priceAndBasket">
+                                <div style="width: 100%;justify-content: space-around;display: flex;">
+                                    <div>
+                                        <p class="mt-2">3299.99 ₼</p>
+                                    </div>
+                                    <div>
+                                        <button onclick="addShopping()" class="btn btn-gray">Add Basket</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newProductFooter d-flex justify-content-center mt-4">
+            <h5 class=""><a href="№">See more</a></h5>
+        </div>
+    </div>
+    <div class="container mt-4 pt-4" id="newProducts">
+        <div class="row mt-4 pt-4 pb-4 d-flex justify-content-center" class="titles">
+            <h3>Offers</h3>
+        </div>
+        <div>
+            <nav id="tabForOffer">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active tabNav" id="nav-home-tab" style="color: black;" data-toggle="tab"
+                        href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Laptops</a>
+                    <a class="nav-item nav-link tabNav" id="nav-profile-tab" style="color: black;" data-toggle="tab"
+                        href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Phones</a>
+                    <a class="nav-item nav-link tabNav" id="nav-contact-tab" style="color: black;" data-toggle="tab"
+                        href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">TVs</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="row  mt-4">
+                        <div class="col-3 offers">
+                            <div class="product">
+                                <div class="img">
+                                    <div class="saleDiv">
+                                        <span class="badge bg-success">18 %</span>
+                                    </div>
+                                    <img src="./img/Lenova ThinkPad.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h5 class="titleForProduct"><a href="#">Lenova ThinkPad</a></h5>
+                                    <div style="position: absolute; bottom: 0;width:100%">
+                                        <div class="priceAndBasket">
+                                            <div style="width: 100%;justify-content: space-around;display: flex;">
+                                                <div>
+                                                    <p class="mt-2"><del class="text-danger">1300₼</del>1099₼</p>
+                                                </div>
+                                                <div>
+                                                    <button onclick="addShopping()" class="btn btn-gray">Add
+                                                        Basket</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 offers">
+                            <div class="product">
+                                <div class="img">
+
+                                    <div class="saleDiv">
+                                        <span class="badge bg-success">34 %</span>
+                                    </div>
+                                    <img src="./img/MacBookPro.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <h5 class="titleForProduct"><a href="#">MacBook Pro</a></h5>
+                                    <div style="position: absolute; bottom: 0;width:100%">
+                                        <div class="priceAndBasket">
+                                            <div style="width: 100%;justify-content: space-around;display: flex;">
+                                                <div>
+                                                    <p class="mt-2"><del class="text-danger">3899.99₼</del>2999.99₼</p>
+                                                </div>
+                                                <div>
+                                                    <button onclick="addShopping()" class="btn btn-gray">Add Basket</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 offers">
+                            <div class="product">
+                                <div class="img">
+
+                                    <div class="saleDiv">
+                                        <span class="badge bg-success">15 %</span>
+                                    </div>
+                                    <img src="./img/Acer ChromeBook.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h5 class="titleForProduct"><a href="#">Acer ChromeBook</a></h5>
+                                    <div style="position: absolute; bottom: 0;width:100%">
+                                        <div class="priceAndBasket">
+                                            <div style="width: 100%;justify-content: space-around;display: flex;">
+                                                <div>
+                                                    <p class="mt-2"><del class="text-danger">2299₼</del>1999₼</p>
+                                                </div>
+                                                <div>
+                                                    <button onclick="addShopping()" class="btn btn-gray">Add
+                                                        Basket</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 offers">
+                            <div class="product">
+                                <div class="img">
+                                    <div class="saleDiv">
+                                        <span class="badge bg-success">20 %</span>
+                                    </div>
+                                    <img src="./img/ASUS ZenBook.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h5 class="titleForProduct"><a href="#">ASUS ZenBook</a></h5>
+                                    <div style="position: absolute; bottom: 0;width:100%">
+                                        <div class="priceAndBasket">
+                                            <div style="width: 100%;justify-content: space-around;display: flex;">
+                                                <div>
+                                                    <p class="mt-2"><del class="text-danger">2400₼</del>1999₼</p>
+                                                </div>
+                                                <div>
+                                                    <button onclick="addShopping()" class="btn btn-gray">Add
+                                                        Basket</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <div class="row  mt-4">
+                        <div class="col-3 offers">
+                            <div class="product">
+                                <div class="img">
+                                    <div class="saleDiv">
+                                        <span class="badge bg-success">15 %</span>
+                                    </div>
+                                    <img src="./img/Iphone12MINI.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h5 class="titleForProduct"><a href="#">IPHONE 12 MINI</a></h5>
+                                    <div style="position: absolute; bottom: 0;width:100%">
+                                        <div class="priceAndBasket">
+                                            <div style="width: 100%;justify-content: space-around;display: flex;">
+                                                <div>
+                                                    <p class="mt-2"><del class="text-danger">2499.99₼</del>2199.99₼</p>
+                                                </div>
+                                                <div>
+                                                    <button onclick="addShopping()" class="btn btn-gray">Add
+                                                        Basket</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 offers">
+                            <div class="product">
+                                <div class="img">
+                                    <div class="saleDiv">
+                                        <span class="badge bg-success">20 %</span>
+                                    </div>
+                                    <img src="./img/Nokia 9.webp" alt="">
+                                </div>
+                                <div class="content">
+                                    <h5 class="titleForProduct"><a href="#">Nokia 9 (Five cameras)</a></h5>
+                                    <div style="position: absolute; bottom: 0;width:100%">
+                                        <div class="priceAndBasket">
+                                            <div style="width: 100%;justify-content: space-around;display: flex;">
+                                                <p class="mt-2"><del class="text-danger">1699.99₼</del>1499.99₼</p>
+                                                <div>
+                                                    <button onclick="addShopping()" class="btn btn-gray">Add
+                                                        Basket</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 offers">
+                            <div class="product">
+                                <div class="img">
+                                    <div class="saleDiv">
+                                        <span class="badge bg-success">20 %</span>
+                                    </div>
+                                    <img src="./img/RedmiNote10.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h5 class="titleForProduct"><a href="#">REDMI Note 10</a></h5>
+                                    <div style="position: absolute; bottom: 0;width:100%">
+                                        <div class="priceAndBasket">
+                                            <div style="width: 100%;justify-content: space-around;display: flex;">
+                                                <div>
+                                                    <p class="mt-2"><del class="text-danger">1999.99₼</del>1699.99₼</p>
+                                                </div>
+                                                <div>
+                                                    <button onclick="addShopping()" class="btn btn-gray">Add
+                                                        Basket</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 offers">
+                            <div class="product">
+                                <div class="img">
+                                    <div class="saleDiv">
+                                        <span class="badge bg-success">20 %</span>
+                                    </div>
+                                    <img src="./img/Huawei Mate X.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h5 class="titleForProduct"><a href="#">Huawai Mate X</a></h5>
+                                    <div style="position: absolute; bottom: 0;width:100%">
+                                        <div class="priceAndBasket">
+                                            <div style="width: 100%;justify-content: space-around;display: flex;">
+                                                <div>
+                                                    <p class="mt-2"><del class="text-danger">2299.99₼</del>1999.99₼</p>
+                                                </div>
+                                                <div>
+                                                    <button onclick="addShopping()" class="btn btn-gray">Add
+                                                        Basket</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <div class="row  mt-4">
+                        <div class="col-3 offers">
+                            <div class="product">
+                                <div class="img">
+                                    <div class="saleDiv">
+                                        <span class="badge bg-success">27 %</span>
+                                    </div>
+                                    <img src="./img/Samsung 82-inch TU8000 4K UHD.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h5 class="titleForProduct"><a href="#">Samsung TU8000 4K UHD 82-inch</a></h5>
+                                    <div style="position: absolute; bottom: 0;width:100%">
+                                        <div class="priceAndBasket">
+                                            <div style="width: 100%;justify-content: space-around;display: flex;">
+                                                <div>
+                                                    <p class="mt-2"><del class="text-danger">4500₼</del>3500₼</p>
+                                                </div>
+                                                <div>
+                                                    <button onclick="addShopping()" class="btn btn-gray">Add
+                                                        Basket</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 offers">
+                            <div class="product">
+                                <div class="img">
+
+                                    <div class="saleDiv">
+                                        <span class="badge bg-success">20 %</span>
+                                    </div>
+                                    <img src="./img/Sony X800G Series 4K UGD.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h5 class="titleForProduct"><a href="#">Sony X800G Series 4K UHD(43")</a></h5>
+                                    <div style="position: absolute; bottom: 0;width:100%">
+                                        <div class="priceAndBasket">
+                                            <div style="width: 100%;justify-content: space-around;display: flex;">
+                                                <div>
+                                                    <p class="mt-2"><del class="text-danger">49990₼</del>3999₼</p>
+                                                </div>
+                                                <div>
+                                                    <button onclick="addShopping()" class="btn btn-gray">Add
+                                                        Basket</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 offers">
+                            <div class="product">
+                                <div class="img">
+                                    <div class="saleDiv">
+                                        <span class="badge bg-success">50 %</span>
+                                    </div>
+                                    <img src="./img/Sony BRAVIA 2020.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h5 class="titleForProduct"><a href="#">Sony BRAVIA 2020</a></h5>
+                                    <div style="position: absolute; bottom: 0;width:100%">
+                                        <div class="priceAndBasket">
+                                            <div style="width: 100%;justify-content: space-around;display: flex;">
+                                                <div>
+                                                    <p class="mt-2"><del class="text-danger">3599₼</del>2999.99₼</p>
+                                                </div>
+                                                <div>
+                                                    <button onclick="addShopping()" class="btn btn-gray">Add
+                                                        Basket</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 offers">
+                            <div class="product">
+                                <div class="img">
+
+                                    <div class="saleDiv">
+                                        <span class="badge bg-success">75</span>
+                                    </div>
+                                    <img src="./img/Panasonic LED (42-INCH).jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h5 class="titleForProduct"><a href="#">Panasonic LED (42")</a></h5>
+                                    <div style="position: absolute; bottom: 0;width:100%">
+                                        <div class="priceAndBasket">
+                                            <div style="width: 100%;justify-content: space-around;display: flex;">
+                                                <div>
+                                                    <p class="mt-2"><del class="text-danger">899₼</del>1599₼</p>
+                                                </div>
+                                                <div>
+                                                    <button onclick="addShopping()" class="btn btn-gray">Add
+                                                        Basket</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footerPart mt-4">
+        <div class="container-fluid" id="footterBg">
+            <div class="row w-100">
+                <div class="container d-flex mt-4">
+                    <div id="footerLeft">
+                        <div>
+                            <h3>SUBSCRIBE US</h3>
+                            <div class="input-group">
+                                <input type="text" class="form-control rounded-0" placeholder="Write email...">
+                                <div class="input-group-append">
+                                    <button class="btn btn-dark rounded-0" type="button">Subscribe</button>
+                                </div>
+                            </div>
+                            <div style="margin-top: 50px;">
+                                <img src="./img/map.PNG" style="width: 100%; height: 100%;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="footerRight">
+                        <div style="display: flex;justify-content: center;">
+                            <div>
+                                <h4>Contact</h4>
+                                <p id="numberTag"><b><i class="fas fa-phone"></i><a href="#"> +99455
+                                            555-55-55</a></b>
+                                </p>
+                                <p id="numberTag"><b><i class="fas fa-phone-volume"></i><a href="#">
+                                            +99412-555-55-55</a></b></p>
+                                <h4 class="socialMedTit">Social Medias</h4>
+                                <div class="d-flex">
+                                    <div class="socialMeas"><a href="#"><img src="./img/facebook.webp" width="100%"
+                                                alt=""></a></div>
+                                    <div class="socialMeas"><a href="#"><img src="./img/instagram.png" width="100%"
+                                                alt=""></a></div>
+                                    <div class="socialMeas"><a href="#"><img src="./img/youtube.webp" width="100%"
+                                                alt=""></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="paymentMTit">Payment Methods</h4>
+                        <div id="forDebitCards" class="d-flex justify-content-center mt-2 pt-4">
+                            <img src="./img/payments.png" width="80%" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./js/js.js"></script>
+</body>
+
+</html>

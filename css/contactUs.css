@@ -1,0 +1,205 @@
+/* header */
+
+body {
+    background-color: rgb(251 247 247);
+    color: white;
+}
+
+#navA{
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding-right: 57px;
+    margin-left: -73px;
+}
+#navContainer {
+    background-color: #dc3545;
+}
+
+#shopIcon {
+    font-size: 27px;
+    margin-right: 9px;
+}
+
+.fa-shopping-cart {
+    position: relative;
+}
+
+#badgeForShopping {
+    font-size: 12px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0px;
+    top: 14px;
+}
+
+#openColorDiv {
+    display: flex;
+    position: fixed;
+    top: 250px;
+    right: -30px;
+}
+
+#changeColor {
+    width: 30px;
+}
+
+#changeColor .small {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#navContainer .navbar-nav{
+    justify-content: space-between;
+    display: flex;
+    width: 60%;
+}
+#red {
+    background-color: #dc3545;
+}
+
+#blue {
+    background-color: #201c5e;
+}
+
+.navbar-nav li a:hover{
+    font-weight: bold;
+}
+/* BodyPart */
+
+#contactDiv {
+    min-height: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+#mainPart {
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 130px;
+    width: 80%;
+}
+
+#mainPart #left {
+    width: 35%;
+    background-color: #495c6a;
+}
+
+#imgDiv {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+#infoDiv {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#infoDiv .info {
+    text-align: center;
+    font-size: 17px;
+    width: 80%;
+}
+
+#mainPart #right input {
+    background-color: #ffbdc6;
+    height: 52px;
+}
+
+#mainPart #right {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding-bottom: 70px;
+}
+
+#mainPart #right>div {
+    width: 85%;
+}
+
+#titleDiv {
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px
+}
+
+#mainPart #right form {
+    width: 100%;
+    padding-top: 60px
+}
+
+#btnId {
+    background-color: #dc3545;
+    color: white;
+    font-weight: bold;
+}
+
+#mainPart #right form #buttonDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#mainPart #right form #buttonDiv button {
+    width: 148px;
+    height: 48px;
+}
+
+.footerPart .container-fluid {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#footterBg {
+    background-color: #dc3545;
+}
+
+#footerLeft {
+    width: 50%;
+    color: white;
+}
+
+#footerRight {
+    width: 50%;
+    color: white;
+}
+
+.socialMedTit {
+    margin-top: 60px;
+}
+
+.paymentMTit {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#numberTag a {
+    color: white;
+}
+
+#numberTag a:hover {
+    color: black !important;
+}
+
+#numberTag:hover {
+    color: black !important;
+}
+
+.fas {
+    font-size: 25px;
+}
+
+.socialMeas {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+.socialMeas img:hover{
+    width: 42px;
+    height: 42px;
+    transition: 0.5;
+}

@@ -1,0 +1,278 @@
+/* top */
+
+body {
+    background-color: rgb(253 252 252);
+}
+
+#shopIcon {
+    font-size: 27px;
+    margin-right: 9px;
+}
+
+.fa-shopping-cart {
+    position: relative;
+}
+
+#badgeForShopping {
+    font-size: 14px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0px;
+    top: 14px;
+}
+
+#openColorDiv {
+    display: flex;
+    position: fixed;
+    top: 250px;
+    right: -30px;
+}
+
+#changeColor {
+    width: 30px;
+}
+
+#changeColor .small {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#red {
+    background-color: #dc3545;
+}
+
+#blue {
+    background-color: #201c5e;
+}
+
+#navContainer {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: #dc3545;
+}
+.navbar-nav li a:hover{
+    font-weight: bold;
+}
+
+#navContainer .navbar-nav{
+    justify-content: space-between;
+    display: flex;
+    width: 60%;
+}
+/* BodyPart */
+
+#carouselId {
+    height: 650px;
+    margin-top: 80px;
+    width: 60%;
+}
+
+#newsRight {
+    width: 19%;
+    margin: 0 auto;
+}
+
+.newsDiv {
+    box-shadow: 0px 0px 10px black;
+}
+#navA{
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding-right: 57px;
+    margin-left: -73px;
+}
+.newsContent {
+    position: relative;
+}
+
+.newsContent img {
+    opacity: 0.4;
+}
+.newsContent .contentDiv {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    padding: 11px;
+    text-align: justify;
+    z-index: 9;
+    opacity: 0.7;
+}
+
+.newsContent .contentDiv2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 11px;
+    text-align: justify;
+    z-index: 9;
+}
+
+.newsContent .contentDiv2 a {
+    font-size: 17px;
+}
+
+#newsLeft {
+    width: 20%;
+}
+
+.newsDiv {
+    width: 90%;
+    height: 180px;
+    border: 1px solid black;
+    margin-top: 90px;
+}
+
+.product .img {
+    width: 100%;
+    height: 200px;
+}
+
+.product .img img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.titles {
+    background-color: rgb(180, 172, 172);
+}
+
+.productCal {
+    box-shadow: 0px 0px 22px gray;
+}
+
+.productCal:hover {
+    box-shadow: 0px 0px 22px rgb(221, 83, 83);
+}
+
+.product {
+    margin: 10px;
+}
+.product .content{
+    height: 160px;
+    position: relative;
+}
+.titleForProduct {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.titleForProduct a {
+    color: black;
+    text-decoration: none;
+}
+
+.priceAndBasket {
+    width: 100%;
+    display: flex;
+}
+.priceAndBasket div{
+    display: flex;
+}
+.priceAndBasket button:hover {
+    background-color: #e35d6a;
+    color: white;
+}
+
+.listNewProducts {
+    justify-content: space-around;
+}
+
+.newProductFooter {
+    background-color: rgb(212 212 212);
+    padding: 11px;
+    border-radius: 29px;
+}
+
+.newProductFooter a {
+    color: black;
+}
+
+.saleDiv {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.saleDiv span {
+    opacity: 0.8;
+    padding: 10px;
+}
+
+#tabForOffer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.offers {
+    border: 1px solid gray;
+}
+
+.offers .titleForProduct {
+    text-align: center;
+}
+
+/* footer */
+
+.footerPart .container-fluid {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#footterBg {
+    background-color: #dc3545;
+}
+
+#footerLeft {
+    width: 50%;
+    color: white;
+}
+
+#footerRight {
+    width: 50%;
+    color: white;
+}
+
+.socialMedTit {
+    margin-top: 60px;
+}
+
+.paymentMTit {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#numberTag a {
+    color: white;
+}
+
+#numberTag a:hover {
+    color: black !important;
+}
+
+#numberTag:hover {
+    color: black !important;
+}
+
+.fas {
+    font-size: 25px;
+}
+
+.socialMeas {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+.socialMeas img:hover{
+    width: 42px;
+    height: 42px;
+    transition: 0.5;
+}

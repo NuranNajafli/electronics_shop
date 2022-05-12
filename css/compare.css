@@ -1,0 +1,141 @@
+body{
+    background-color: rgb(253 252 252);
+}
+#shopIcon{
+    font-size: 27px;
+    margin-right: 9px;
+}
+
+#navA{
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding-right: 57px;
+    margin-left: -73px;
+}
+.fa-shopping-cart{
+    position: relative;
+}
+#badgeForShopping{
+    font-size: 12px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0px;
+    top: 14px;
+}
+#openColorDiv{
+    display: flex;
+    position: fixed;
+    top: 250px;
+    right: -30px;
+}
+#changeColor{
+    width: 30px;
+}
+#changeColor .small{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+#red {
+    background-color: #dc3545;
+}
+
+#blue {
+    background-color: #201c5e;
+}
+
+#navContainer{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: #dc3545;
+}
+
+.navbar-nav li a:hover{
+    font-weight: bold;
+}
+#navContainer .navbar-nav{
+    justify-content: space-between;
+    display: flex;
+    width: 60%;
+}
+/* BodyPart */
+.forSearcInput{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+.forSearcInput >.row{
+    display: flex;
+    justify-content: space-around;
+}
+#mainDicForCompare .top{
+    height: 40%;
+}
+#leftSide{
+   width: 13%;
+}
+#middle{
+   width:40%; 
+}
+#rightSide{
+    width: 40%;
+}
+#rightSide,#middle{
+    border: 11px solid #f0efef
+}
+#imgTag{
+    height: 100%;
+}
+/* footer */
+.footerPart .container-fluid {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#footterBg {
+    background-color: #dc3545;
+}
+#footerLeft {
+    width: 50%;
+    color: white;
+}
+
+#footerRight {
+    width: 50%;
+    color: white;
+}
+
+.socialMedTit {
+    margin-top: 60px;
+}
+
+.paymentMTit {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#numberTag a{
+    color: white;
+}
+#numberTag a:hover{
+    color: black !important;
+}
+#numberTag:hover{
+    color: black !important;
+}
+.fas{
+    font-size: 25px;
+}
+
+.socialMeas {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+.socialMeas img:hover{
+    width: 42px;
+    height: 42px;
+    transition: 0.5;
+}

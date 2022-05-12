@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="shopping,phone,tvs,computer,pc,komputer,televizor,telefon,smartphone" name="keywords">
+    <meta name="author" content="Sovet,Pavin,Nuran">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="../css/singlePage.css">
+    <title>Single Page</title>
+</head>
+
+<body>
+    <div id="openColorDiv">
+        <div>
+            <a style="cursor: pointer;color: black !important;" onclick="showColors()"> <i
+                    class="fas fa-fill-drip"></i></a>
+        </div>
+        <div id="changeColor">
+            <div onclick="changeColor(this.id)" class="small" id="red"></div>
+            <div onclick="changeColor(this.id)" class="small" id="blue"></div>
+        </div>
+    </div>
+    <div class="container-fluid" id="navContainer">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="../index.html" id="navA">ELECTRONICS</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./compare.html">Compare</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./contactUs.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <a href="#" class="text-white" id="shopIcon"><i class="fas fa-shopping-cart"><span
+                                    class="badge badge-success" id="badgeForShopping">0</span></i></a>
+
+                    </div>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success my-2 my-sm-0" type="button"><i
+                                class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container" id="mainContent"
+        style="background-color: white;margin-top: 100px;box-shadow: 0px 0px 9px grey;padding: 37px;">
+        <div class="row pb-4">
+            <div id="leftDivForImg" style="width: 50%;display: flex;justify-content: space-between;">
+                <div id="imagesDiv">
+                    <div class="smallImgs">
+                        <img onclick="showImg(this.src)" src="../img/h1.jpg" alt="">
+                    </div>
+                    <div class="smallImgs">
+                        <img onclick="showImg(this.src)" src="../img/h2.webp" alt="">
+                    </div>
+                    <div class="smallImgs">
+                        <img onclick="showImg(this.src)" src="../img/h3.png" alt="">
+                    </div>
+                </div>
+                <div id="largeImg">
+                    <img src="../img/h0.webp" id="largeImgId" alt="">
+                </div>
+            </div>
+            <div id="rightDiv" style="width: 50%;padding: 20px;">
+                <div>
+                    <h4>HITACHI TV-553350</h4>
+                </div>
+                <div class="priceDiv">
+                    <span id="priceId">1699.99 ₼ ₼</span>
+                </div>
+                <div class="contentDes">
+                    <p>Hitachi Roku TV’s deliver vivid picture quality and smart and simple features that make it fun to
+                        watch TV. The home screen of Hitachi Roku TVs can be personalized with preferred streaming
+                        channels and icons for game consoles, cable boxes and Blu-Ray™ players.</p>
+                </div>
+                <div style="margin-top: 30px;">
+                    <b>Availability: <span class="text-success">5 in stock</span></b>
+                </div>
+                <div id="addToCardDiv" style="margin-top: 30px;display: flex;width: 200px;">
+                    <div style="width: 30%"><input id="countId" type="number" value="1" class="rounded-0"></div>
+                    <div style="width: 70%;"> <button class="btn btn-dark rounded-0"
+                            onclick="addShopping(document.getElementById('countId').value)">Add To Card</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div>
+                <h4>Comments</h4>
+            </div>
+        </div>
+        <div class="p-3">
+            <div style="width: 50px;">
+                <img class="w-100" src="../img/user.png" alt="">
+            </div>
+            <div>
+                <p><b class="text-danger">Sovet</b><br>Hitachi Microwave I would recommend this product any time, perfect size for most kitchen utensils has a variety of functions.</p>
+            </div>
+        </div>
+        <div class="p-3">
+            <div style="width: 50px;">
+                <img class="w-100" src="../img/user.png" alt="">
+            </div>
+            <div>
+                <p><b class="text-danger">Nuran</b><br>Worst sound ever on a tv, up to 100%and still muffled, definately not my hearung as i have an older lg in bedroom and can hear it on a 5%🙄
+
+                    Also of late have experience black screen having to unplug tv take ariel out start again.. Not acceptable :(</p>
+            </div>
+        </div>
+        <div class="p-3">
+            <div style="width: 50px;">
+                <img class="w-100" src="../img/user.png" alt="">
+            </div>
+            <div>
+                <p><b class="text-danger">Parvin</b><br>I just bought a 50 inch Hitachi android tv think it's a great TV and affordable too</p>
+
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <h5>Write a comment</h5>
+        </div>
+        <div class="row writeComment d-flrx justify-content-center">
+            <div style="width: 50%;">
+                <div class="form-group">
+                    <input class="form-control inpCl" type="text" placeholder="Your name">
+                </div>
+                <div class="form-group mt-4">
+                    <input id="commentInput" class="form-control inpCl" type="text" placeholder="Your comment">
+                </div>
+
+                <div id="buttonDivComment">
+                    <button class="btn" id="btnId">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footerPart mt-4">
+        <div class="container-fluid" id="footterBg">
+            <div class="row w-100">
+                <div class="container d-flex mt-4">
+                    <div id="footerLeft">
+                        <div>
+                            <h3>SUBSCRIBE US</h3>
+                            <div class="input-group">
+                                <input type="text" class="form-control rounded-0" placeholder="Write email...">
+                                <div class="input-group-append">
+                                    <button class="btn btn-dark rounded-0" type="button">Subscribe</button>
+                                </div>
+                            </div>
+                            <div style="margin-top: 50px;">
+                                <img src="../img/map.PNG" style="width: 100%; height: 100%;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="footerRight">
+                        <div style="display: flex;justify-content: center;">
+                            <div>
+                                <h4>Contact</h4>
+                                <p id="numberTag"><b><i class="fas fa-phone"></i><a href="#"> +99455 555-55-55</a></b>
+                                </p>
+                                <p id="numberTag"><b><i class="fas fa-phone-volume"></i><a href="#">
+                                            +99412-555-55-55</a></b></p>
+                                <h4 class="socialMedTit">Social Medias</h4>
+                                <div class="d-flex">
+                                    <div class="socialMeas"><a href="#"><img src="../img/facebook.webp" width="100%"
+                                                alt=""></a></div>
+                                    <div class="socialMeas"><a href="#"><img src="../img/instagram.png" width="100%"
+                                                alt=""></a></div>
+                                    <div class="socialMeas"><a href="#"><img src="../img/youtube.webp" width="100%"
+                                                alt=""></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="paymentMTit">Payment Methods</h4>
+                        <div id="forDebitCards" class="d-flex justify-content-center mt-2 pt-4">
+                            <img src="../img/payments.png" width="80%" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="../js/js.js"></script>
+</body>
+
+</html>

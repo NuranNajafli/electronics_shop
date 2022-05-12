@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="shopping,phone,tvs,computer,pc,komputer,televizor,telefon,smartphone" name="keywords">
+    <meta name="author" content="Sovet,Pavin,Nuran">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="../css/compare.css">
+    <title>Compare</title>
+</head>
+
+<body>
+    <div id="openColorDiv">
+        <div>
+            <a style="cursor: pointer;color: black !important;" onclick="showColors()"> <i
+                    class="fas fa-fill-drip"></i></a>
+        </div>
+        <div id="changeColor">
+            <div onclick="changeColor(this.id)" class="small" id="red"></div>
+            <div onclick="changeColor(this.id)" class="small" id="blue"></div>
+        </div>
+    </div>
+    <div class="container-fluid" id="navContainer">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="../index.html" id="navA">ELECTRONICS</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./compare.html">Compare</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./contactUs.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <a href="#" class="text-white" id="shopIcon"><i class="fas fa-shopping-cart"><span
+                                    class="badge badge-success" id="badgeForShopping">0</span></i></a>
+
+                    </div>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success my-2 my-sm-0" type="button"><i
+                                class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container forSearcInput pb-2">
+        <div class="row w-75">
+            <div class="d-flex">
+                <input class="form-control rounded-0" placeholder="Search for phone..." type="text">
+                <button class="btn rounded-0 btn-dark">Choose</button>
+            </div>
+            <div class="d-flex">
+                <input class="form-control rounded-0" placeholder="Search for phone..." type="text">
+                <button class="btn rounded-0 btn-dark">Choose</button>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="display: flex;justify-content: center;text-align: center;">
+        <div class="row w-75" id="mainDicForCompare">
+            <div id="leftSide">
+                <div class="leftTop top"></div>
+            </div>
+            <div id="middle">
+                <div class="middleTop top">
+                    <div>
+                        <h4>Apple iPhone X</h4>
+                        <img src="../img/compareX.jpg" width="100%" alt="" id="imgTag">
+                    </div>
+                </div>
+            </div>
+            <div id="rightSide">
+                <div class="rightTop top">
+                    <div>
+                        <h4>Apple iPhone XS</h4>
+                        <img src="../img/CompareXS.jpg" width="100%" alt="" id="imgTag">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-center">
+        <div class="row w-75">
+            <table class="table table-striped">
+                <tbody>
+                  <tr>
+                    <th>MEMORY</th>
+                    <td>64GB 3GB RAM, 256GB 3GB RAM</td>
+                    <td>64GB 3GB RAM, 256GB 3GB RAM</td>
+                  </tr>
+                  <tr>
+                    <th>MAIN CAMERA</th>
+                    <td>12 MP, f/1.8, 28mm (wide), 1/3", 1.22µm, dual pixel PDAF, OIS</td>
+                    <td>12 MP, f/1.8, 26mm (wide), 1/2.55", 1.4µm, dual pixel PDAF, OIS</td>
+                  </tr>
+                  <tr>
+                    <th>SELFIE CAMERA</th>
+                    <td>7 MP, f/2.2, 32mm (standard)</td>
+                    <td>7 MP, f/2.2, 32mm (standard)</td>
+                  </tr>
+                  <tr>
+                    <th>SOUND</th>
+                    <td>Yes, with stereo speaker</td>
+                    <td>Yes, with stereo speakers</td>
+                  </tr>
+                  <tr>
+                    <th>BATTERY</th>
+                    <td>Li-Ion 2716 mAh, non-removable (10.35 Wh)</td>
+                    <td>Li-Ion 2658 mAh, non-removable (10.13 Wh)</td>
+                  </tr>
+                  <tr>
+                    <th>MISC</th>
+                    <td>Space Gray, Silver</td>
+                    <td>Space Gray, Silver, Gold	</td>
+                  </tr>
+                  <tr>
+                    <th>Price</th>
+                    <td>2350 ₼</td>
+                    <td>2550 ₼</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+    <div class="footerPart mt-4">
+        <div class="container-fluid" id="footterBg">
+            <div class="row w-100">
+                <div class="container d-flex mt-4">
+                    <div id="footerLeft">
+                        <div>
+                            <h3>SUBSCRIBE US</h3>
+                            <div class="input-group">
+                                <input type="text" class="form-control rounded-0" placeholder="Write email...">
+                                <div class="input-group-append">
+                                    <button class="btn btn-dark rounded-0" type="button">Subscribe</button>
+                                </div>
+                            </div>
+                            <div style="margin-top: 50px;">
+                                <img src="../img/map.PNG" style="width: 100%; height: 100%;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="footerRight">
+                        <div style="display: flex;justify-content: center;">
+                            <div>
+                                <h4>Contact</h4>
+                                <p id="numberTag"><b><i class="fas fa-phone"></i><a href="#"> +99455 555-55-55</a></b>
+                                </p>
+                                <p id="numberTag"><b><i class="fas fa-phone-volume"></i><a href="#">
+                                            +99412-555-55-55</a></b></p>
+                                <h4 class="socialMedTit">Social Medias</h4>
+                                <div class="d-flex">
+                                    <div class="socialMeas"><a href="#"><img src="../img/facebook.webp" width="100%"
+                                                alt=""></a></div>
+                                    <div class="socialMeas"><a href="#"><img src="../img/instagram.png" width="100%"
+                                                alt=""></a></div>
+                                    <div class="socialMeas"><a href="#"><img src="../img/youtube.webp" width="100%"
+                                                alt=""></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="paymentMTit">Payment Methods</h4>
+                        <div id="forDebitCards" class="d-flex justify-content-center mt-2 pt-4">
+                            <img src="../img/payments.png" width="80%" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="../js/js.js"></script>
+</body>
+
+</html>
